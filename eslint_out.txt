@@ -1,0 +1,180 @@
+﻿
+D:\blickwinkle_website\src\app\admin\login\page.tsx
+  41:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\admin\page.tsx
+  31:38  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  36:38  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  37:40  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  83:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\blickwinkle_website\src\app\admin\page.tsx:83:7
+  81 |   useEffect(() => {
+  82 |     if (admin) {
+> 83 |       fetchStats();
+     |       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  84 |     }
+  85 |   }, [admin, fetchStats]);
+  86 |  react-hooks/set-state-in-effect
+
+D:\blickwinkle_website\src\app\api\admin\contact-messages\route.ts
+  15:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  32:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  51:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  70:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  90:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\api\admin\course-enrollments\route.ts
+  15:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  32:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  51:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  70:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  90:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\api\admin\service-enquiries\route.ts
+  15:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  32:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  51:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  70:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  90:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\api\admin\stats\route.ts
+  90:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\api\admin\subscribers\route.ts
+   16:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   30:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   32:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   58:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   82:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  105:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  125:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\api\contact\route.ts
+  40:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\api\course-enrollment\route.ts
+  40:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\api\service-enquiry\route.ts
+  39:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\app\api\subscribe\route.ts
+  38:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\components\HeroSection.tsx
+  110:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\components\admin\ContactsTab.tsx
+  14:3   warning  'MessageSquare' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  18:38  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-explicit-any
+  22:52  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-explicit-any
+  47:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\blickwinkle_website\src\components\admin\ContactsTab.tsx:47:5
+  45 |
+  46 |   useEffect(() => {
+> 47 |     fetchItems();
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  48 |   }, [fetchItems]);
+  49 |
+  50 |   const handleUpdateStatus = async (id: number, status: string, notes?: string) => {  react-hooks/set-state-in-effect
+  64:34  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\components\admin\CoursesTab.tsx
+  15:3   warning  'Briefcase' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  19:38  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  23:52  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+  48:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\blickwinkle_website\src\components\admin\CoursesTab.tsx:48:5
+  46 |
+  47 |   useEffect(() => {
+> 48 |     fetchItems();
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  49 |   }, [fetchItems]);
+  50 |
+  51 |   const handleUpdateStatus = async (id: number, status: string, notes?: string) => {  react-hooks/set-state-in-effect
+  65:34  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\components\admin\OverviewTab.tsx
+    8:3   warning  'Clock' is defined but never used         @typescript-eslint/no-unused-vars
+   10:3   warning  'TrendingUp' is defined but never used    @typescript-eslint/no-unused-vars
+   16:10  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   17:11  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  161:42  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  210:41  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\components\admin\ServicesTab.tsx
+   6:3   warning  'Filter' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+  11:3   warning  'Clock' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+  14:3   warning  'AlertCircle' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  17:3   warning  'Calendar' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+  21:38  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-explicit-any
+  25:52  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-explicit-any
+  50:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\blickwinkle_website\src\components\admin\ServicesTab.tsx:50:5
+  48 |
+  49 |   useEffect(() => {
+> 50 |     fetchItems();
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  51 |   }, [fetchItems]);
+  52 |
+  53 |   const handleUpdateStatus = async (id: number, status: string, notes?: string) => {  react-hooks/set-state-in-effect
+  67:34  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\components\admin\SettingsTab.tsx
+   5:3   warning  'Key' is defined but never used           @typescript-eslint/no-unused-vars
+  15:57  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  51:19  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\blickwinkle_website\src\components\admin\SubscribersTab.tsx
+   18:38  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-explicit-any
+   51:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\blickwinkle_website\src\components\admin\SubscribersTab.tsx:51:5
+  49 |
+  50 |   useEffect(() => {
+> 51 |     fetchItems();
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  52 |   }, [fetchItems]);
+  53 |
+  54 |   const handleToggleStatus = async (id: number, currentStatus: string) => {  react-hooks/set-state-in-effect
+  119:19  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-explicit-any
+
+Γ£û 66 problems (57 errors, 9 warnings)
+
